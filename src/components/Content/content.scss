@@ -1,0 +1,88 @@
+.content{
+    background-color: rgb(70, 70, 70);
+    grid-area: content;
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.user-info{
+  display: grid;
+  grid-template-areas: 
+    "a n"
+    "a s"
+  ;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(auto-fit, 50px);
+  text-align: left;
+  gap: 30px;
+
+  &__name{
+    grid-area: n;
+  }
+
+  &__avatar{
+    grid-area: a;
+    width: 300px;
+  }
+  
+  &__status{
+    grid-area: s;
+  }
+}
+
+.comments{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px;
+  
+}
+
+.new-comment{
+  color: rgb(48, 20, 48);
+  width: 700px; 
+  resize: vertical;
+}
+
+.submit{
+  width: 120px;
+  background-color: rgb(138, 10, 177);
+  height: 30px;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  text-transform: capitalize;
+  border: none;
+  margin: 10px 0;
+}
+
+.comment{
+  width: 90%;
+  height: 70px;
+  display: grid;
+  grid-template-areas: 
+    "a n"
+    "a t"
+  ;
+  background-color: rgb(44, 44, 44);
+  padding: 20px;
+  text-align: left;
+  grid-template-columns: 60px 1fr;
+  gap: 10px;
+}
+
+.avatar{
+  height: 80%;
+  grid-area: a;
+}
+
+.name{
+  grid-area: n;
+  font-weight: 600;
+}
+
+.text{
+  grid-area: t;
+}

@@ -1,0 +1,26 @@
+.aside{
+    background-color: rgb(17, 17, 17);
+    grid-area: aside;
+    text-align: center;
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    border: solid 1px rgb(102, 6, 131);
+
+    padding-top: 5px;
+}
+
+a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.dialog{
+    color: rgb(29, 57, 148);
+}
+
+.profile{
+    color: rgb(102, 6, 131);
+}

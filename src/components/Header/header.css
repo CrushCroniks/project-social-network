@@ -1,0 +1,8 @@
+.header{
+    background-color: rgb(138, 10, 177);
+    grid-area: header;
+    text-align: center;
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+  }
